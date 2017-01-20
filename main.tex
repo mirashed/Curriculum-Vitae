@@ -10,7 +10,7 @@
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -23,6 +23,7 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+\usepackage{graphicx}
 \usepackage{import}
 
 % personal data
@@ -53,7 +54,41 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Departmnet}{Google Inc.\\123 Pleasant Lane\\Silicon Vali, California} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Hiring Manager,} % Opening greeting
+\closing{Sincerely yours,\\ \includegraphics[width=0.2\linewidth]{signature.jpg}} % Closing phrase
+\enclosure[Acknowledgements:]{This Cover letter and CV are created by using LaTex{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+I am writing to express my interest in your posting on "bdjobs.com" for an Electrical and Electronic Engineer (EEE). After reading the job description I am confident that I would be a perfect fit for this position because of my thinking abilities, knowledge and skills. I love to work with different platform and I always try to do new experiment. 
+
+Now i am running two research parallelly. I worked with Artificial Intelligence, Embedded System, Robotics. One of my research have been published recently in EEE Annual Journal which is about "Arithmetic Logic Unit (ALU)". Now I am working with CMOS Double Gate IC designing.
+
+I enjoy solving logical operation, fixing hardware and programming problems, and feel a sense of accomplishment when a solution is determined and built. I love challenges and I always try to work with new technologies. I believe your company will be the best place for me to apply my education and working knowledge.
+Therefore, I would welcome the chance of an interview, where we would be able to discuss in greater detail the value and strength I can bring to your already successful company.
+
+I’ve attached a copy of my resume that details my experience, educational background, research works, projects, achievements and my interested fields.
+Thank you for your time and consideration. I look forward to speaking with you about this employment opportunity.
+
+\vspace{0.5cm}
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
 %-----       resume       ---------------------------------------------------------
+\clearpage
 \makecvtitle
 
 \small{Electrical and Electronic Engineer who completed the bachelor's degree and too busy to spend time doing research. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
@@ -80,6 +115,8 @@
 
 \end{itemize}
 
+\newpage
+
 \section{Education}
 
 \vspace{5pt}
@@ -91,16 +128,12 @@
 \begin{itemize}
 
 \item{\cventry{2012--2015}{B.Sc.(Hons) Electrical and Electronic Engineering }{Daffodil International University}{Dhaka}{\textit{Major: Electronics and Minor: Power}}{}}
-\vspace{5pt}
 
 \item{\cventry{2010}{HSC}{Bhola Government University College}{Bhola Sadar, Barishal}{\textit{Science}}{}}  % arguments 3 to 6 can be left empty
-\vspace{5pt}
 
 \item{\cventry{2008}{SSC}{Daori Hat Secondary School}{Daori Bazar, Lalmohan, Bhola}{\textit{Science}}{}}
 
 \end{itemize}
-
-\newpage
 
 \vspace{2pt}
 
@@ -160,7 +193,7 @@ The robot gets the information from surrounding area through mounted sensors on 
 
 \end{itemize}
 
-\vspace{2pt}
+\newpage
 
 \subsection{Notable Publications}
 
@@ -168,7 +201,7 @@ The robot gets the information from surrounding area through mounted sensors on 
 
 \begin{itemize}
 
-\item{\textbf{Smart Security System Throught Password Protected Smart Control System of Home Appliance} \textit{\\-EEE Annual Journal 2016}
+\item{\textbf{Smart Security System Through Password Protected Smart Control System of Home Appliance} \textit{\\-EEE Annual Journal 2016}
 
 \vspace{3pt}
 
@@ -226,19 +259,19 @@ The prototype has been successfully developed and it could provide an effective 
 
 \begin{itemize}
 
-\item \textbf{Certification for Project Showcasing Competition:} 'Inter University Championship' \\ EEE-PW16-002 (December 2016)
+\item \textbf{Certification for Project Showcasing Competition:} 'Inter University Championship' \\ EEE-PW16-002 (Dec 2016)
 
 \vspace{6pt}
 
-\item \textbf{National Book Reading Competition 2015:} 'British Council' \\ (October 2015)
+\item \textbf{National Book Reading Competition 2015:} 'British Council' \\ (Oct 2015)
 
 \vspace{6pt}
 
-\item \textbf{Arduino Based Robotics Contests:} 'Pi Labs Bangladesh Ltd' \\ TSB-RW-1504-05 (March 2015)
+\item \textbf{Arduino Based Robotics Contests:} 'Pi Labs Bangladesh Ltd' \\ TSB-RW-1504-05 (Mar 2015)
 
 \vspace{6pt}
 
-\item \textbf{AutoCad 3D Designing (Electrical Drawing):} 'Daffodil International University' \\ EEE/FL2014/SCAC/12 (January 2015)
+\item \textbf{AutoCad 3D Designing (Electrical Drawing):} 'Daffodil International University' \\ EEE/FL2014/SCAC/12 (Jan 2015)
 
 \vspace{6pt}
 
@@ -261,8 +294,6 @@ The prototype has been successfully developed and it could provide an effective 
 \item \textbf{Primary School Scholarship:} 'Education Ministry of the People's Republic of Bangladesh Government'\\(2003)
 
 \end{itemize}
-
-\newpage
 
 \section{Voluntary Work Experiences}
 
@@ -359,10 +390,6 @@ My record for a single solve of the 3X3X3 in unofficial competition is 30 second
 
 \item{I am a amateur writer. I love to writing poem. My hobby is write something unconsciously which are hard to get, but sometime its be look like as poem. Without any preparation, once upon a day I published a book at Bengali Book Fair "Ekushe Boi mela" 2013 which name is “Operation Pure Smile”. Sometime i wrote poem for publishing to Newspaper, Magazine or Social blog.}
 
-\vspace{6pt}
-
-\item{}
-
 \end{itemize}
 
 \section{References}
@@ -375,63 +402,9 @@ My record for a single solve of the 3X3X3 in unofficial competition is 30 second
 
 \vspace{10pt}
 
-\item \textbf{Professor Dr. Engr. Muhibul Haque Bhuyan} \\Professor And Chairperson\\ Ph.D, Bangladesh University of Engineering Technology, Dhaka, Bangladesh. \\Daffodil International University, Bangladesh \\muhibulhb.eee@daffodil.edu.bd
-
-\vspace{10pt}
-
 \item \textbf{Professor. Dr. Md. Fayzur Rahman} \\Professor And Din\\ Ph.D. from Yeungnam University, South Korea. \\Daffodil International University, Bangladesh\\chairman.eee@daffodil.edu.bd
 
 \end{itemize}
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-\clearpage
-
-\recipient{HR Departmnet}{Google Inc.\\123 Pleasant Lane\\Silicon Vali, California} % Letter recipient
-\date{\today} % Letter date
-\opening{Dear Sir or Madam,} % Opening greeting
-\closing{Sincerely yours,} % Closing phrase
-\photo[100pt][0.4pt]{mm} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-\enclosure[Acknowledgements:]{This CV and Cover letter are created by using LaTex{}} % List of enclosed documents
-
-\makelettertitle % Print letter title
-
-Like to be simple and ordinary.
-Trying to be professional as an Electrical and Electronic Engineer and be a good researcher in future.
-Love to read books, watching movie, traveling at new place and Cooking new dish.
-
-My hobby is write something unconsciously which are hard to get, but sometime its be look like as poem. Without any preparation, once upon a day I published a book at Bengali Book Fair 2013 which name is “Operation Pure Smile”.
-
-Having some skills in C programming, Python, Auto-CAD, Mat lab, Spice.
-Working on Robotics and some Electrical and Electronic based project.
-Used to at Windows, Max and Linux environment.
-
-A quit experience in part time job in some Daily Newspaper as a contributor, freelance job in outsourcing on the field of web designing and developing.
-
-Besides as an organizer working in “World Literary Center(Bishwa Sahitta Kendra)”. And as a volunteer working with “Water Aid Bangladesh”.
-
-I am not that guy who always acts like a good boy. Actually I am the best for those who deserve me.
-The bad things of my character sometime I act as selfish, hesitant and self-arrogant. I hate who tall a lair and who over acting as jack of all trades.
-
-I am a man who mixed-up with Extrovert and Introvert.
-But I am Punctual, Quick learner, Highly innovative and self-motivated person. I love to work in a team environment. I am a passionate about my profession and confident on my abilities that always leads me to walk to way of success.
-
-After all I believe “Hope is a good thing, may be the best of the thing.”
-And I Love to dream, nursing to the dream and fight for the dream.
-
-I wish to me; one day I would be a people like a perfect human being.
-
-
-\vspace{0.5cm}
-
-
-\makeletterclosing % Print letter signature
-
-%----------------------------------------------------------------------------------------
-
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
